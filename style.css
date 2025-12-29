@@ -1,0 +1,163 @@
+/* =========================
+   Wiki Jet – Global Styles
+   Shared across all pages
+   ========================= */
+
+:root {
+  /* Wiki Jet livery colors */
+  --orange: #F36A21;
+  --yellow: #FDB515;
+  --teal: #16B6C6;
+  --blue: #0B5EA8;
+
+  --bg: #f6f9fc;
+  --surface: #ffffff;
+  --text: #1e2433;
+  --muted: #6b728a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background: var(--surface);
+  padding: 1.8rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+header h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+nav a {
+  margin-left: 2rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+/* ===== Hero ===== */
+.hero {
+  max-width: 1300px;
+  margin: auto;
+  padding: 6rem 4rem 5rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero h2 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 520px;
+  color: var(--muted);
+}
+
+.hero-cta {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--orange), var(--yellow));
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===== Image Placeholder ===== */
+.image-placeholder {
+  background: linear-gradient(135deg, #f3f6fb, #e9eef7);
+  border-radius: 18px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9aa3b2;
+  font-size: 0.9rem;
+  border: 1px dashed rgba(0,0,0,0.1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== Content ===== */
+main {
+  max-width: 1300px;
+  margin: auto;
+  padding: 4rem 4rem 6rem;
+}
+
+.page-title {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.page-intro {
+  color: var(--muted);
+  max-width: 700px;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: var(--surface);
+  border-top: 1px solid rgba(0,0,0,0.06);
+  text-align: center;
+  padding: 3rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
