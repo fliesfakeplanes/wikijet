@@ -162,6 +162,60 @@ footer {
   color: var(--muted);
 }
 
+/* ===== FAQ Accordion ===== */
+
+.faq-list {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.faq-item {
+  background: var(--surface);
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+/* Clickable question row */
+.faq-question {
+  cursor: pointer;
+  padding: 1.4rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+/* Chevron indicator */
+.faq-question::after {
+  content: "▼";
+  font-size: 0.9rem;
+  color: var(--muted);
+  transition: transform .2s ease;
+}
+
+/* Answer container */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.6rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  transition: max-height .25s ease, padding .25s ease;
+}
+
+/* When expanded */
+.faq-item.open .faq-answer {
+  max-height: 400px;
+  padding: 1rem 1.6rem 1.4rem;
+}
+
+.faq-item.open .faq-question::after {
+  transform: rotate(-180deg);
+}
+
+
+
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .hero {
