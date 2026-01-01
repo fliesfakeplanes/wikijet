@@ -3,112 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wikijet Network</title>
+  <title>Wiki Jet | Network</title>
 
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Global Styles -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Fallback fonts if your CSS references custom ones -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
-
 <body>
-  <!-- ================= NAVBAR ================= -->
-  <header class="navbar">
-    <div class="container nav-content">
 
-      <a href="index.html" class="logo">
-        <img src="assets/logo.png" alt="Wikijet Logo" />
-      </a>
-
-      <nav class="nav-links">
-        <a href="aircraft.html">Aircraft</a>
-        <a href="network.html" class="active">Network</a>
-        <a href="about.html">About</a>
-
-        <!-- Join = external redirect -->
-        <a href="https://example.com" target="_blank" rel="noopener">
-          Join
-        </a>
-
-        <!-- Flight Crew Login button -->
-        <a href="login.html" class="btn btn-primary">
-          Flight Crew Login
-        </a>
-      </nav>
-    </div>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <h1>Wiki Jet - Hawaii's Quickest Virtual Airline</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="fleet.html">Fleet</a>
+      <a href="network.html">Network</a>
+      <a href="faq.html">FAQ</a>
+      <a href="#" onclick="return false;">Join</a>
+      <a href="login.html">Pilot Login</a>
+    </nav>
   </header>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero hero-small">
-    <div class="container">
-      <h1>Our Network</h1>
-      <p>
-        Wikijet connects operators, crew, and partners across a growing network of
-        aircraft and destinations — designed for reliability, consistency, and a
-        premium flight experience.
-      </p>
-    </div>
-  </section>
-
-  <!-- ================= NETWORK GRID ================= -->
-  <section class="section">
-    <div class="container">
-      <h2>Where We Operate</h2>
-
-      <p class="section-intro">
-        Our fleet supports missions across key business aviation markets.
-        Major operating hubs and focus cities are highlighted below.
+  <!-- ================= NETWORK CONTENT ================= -->
+  <main>
+    <section>
+      <h2 class="page-title">Network</h2>
+      <p class="page-intro">
+        Wiki Jet serves a focused inter-island network across Hawaii, offering pilots short and scenic hops.
       </p>
 
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>North America</h3>
-          <p>
-            Primary operations across major business aviation centers including
-            Teterboro, Van Nuys, Dallas, and Miami.
-          </p>
-        </div>
+      <!-- Route Map Placeholder -->
+      <div class="image-placeholder" style="height:420px; margin-bottom:4rem;">
+        Route Map Placeholder
+      </div>
 
-        <div class="card">
-          <h3>Europe</h3>
-          <p>
-            Expanding presence supporting supplemental lift and charter demand
-            across London, Paris, and Zurich corridors.
-          </p>
-        </div>
+      <!-- ================= AIRPORT CARDS ================= -->
 
-        <div class="card">
-          <h3>On-Demand & Charter Support</h3>
-          <p>
-            Partner network and floating fleet enable flexible routing,
-            supplemental lift, and repositioning coverage.
-          </p>
+      <!-- PHNL -->
+      <div class="card" style="margin-bottom:3rem;">
+        <div class="grid" style="grid-template-columns: 1.2fr 1fr; align-items:center;">
+          <div class="image-placeholder">Honolulu Airport Image</div>
+          <div>
+            <h3>Honolulu – PHNL</h3>
+            <p>Hawaii’s primary aviation gateway and largest metropolitan center.</p>
+            <p><strong>Longest Runway:</strong> 12,360 ft</p>
+            <p><a href="https://metarcentral.com/airport/PHNL" target="_blank">View Current METAR</a></p>
+            <p><em>Fun Fact:</em> Honolulu’s airport has ocean-edge runways, giving planes stunning sea views during takeoff and landing.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ================= CTA ================= -->
-  <section class="section section-accent">
-    <div class="container cta">
-      <h2>Interested in Joining the Network?</h2>
-      <p>
-        Whether you’re an operator, crew member, or strategic partner,
-        we’d love to connect.
-      </p>
+      <!-- PHLI -->
+      <div class="card" style="margin-bottom:3rem;">
+        <div class="grid" style="grid-template-columns: 1.2fr 1fr; align-items:center;">
+          <div class="image-placeholder">Lihue Airport Image</div>
+          <div>
+            <h3>Lihue – PHLI</h3>
+            <p>Kauai’s main airport serving resort and inter‑island traffic.</p>
+            <p><strong>Longest Runway:</strong> 6,500 ft</p>
+            <p><a href="https://metarcentral.com/airport/PHLI" target="_blank">View Current METAR</a></p>
+            <p><em>Fun Fact:</em> Lihue Airport occupies an area of 962 acres.</p>
+          </div>
+        </div>
+      </div>
 
-      <a href="contact.html" class="btn btn-primary">
-        Contact Our Team
-      </a>
-    </div>
-  </section>
+      <!-- PHOG -->
+      <div class="card" style="margin-bottom:3rem;">
+        <div class="grid" style="grid-template-columns: 1.2fr 1fr; align-items:center;">
+          <div class="image-placeholder">Maui Airport Image</div>
+          <div>
+            <h3>Kahului (Maui) – PHOG</h3>
+            <p>Maui’s primary airport with steady inter‑island demand.</p>
+            <p><strong>Longest Runway:</strong> 6,998 ft</p>
+            <p><a href="https://metar-taf.com/airport/PHOG" target="_blank">View Current METAR</a></p>
+            <p><em>Fun Fact:</em> Kahului is the second busiest airport in the State of Hawaii and the newest in terms of terminal facilities.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHKO -->
+      <div class="card" style="margin-bottom:3rem;">
+        <div class="grid" style="grid-template-columns: 1.2fr 1fr; align-items:center;">
+          <div class="image-placeholder">Kona Airport Image</div>
+          <div>
+            <h3>Kona – PHKO</h3>
+            <p>Western Big Island airport surrounded by lava fields and ocean.</p>
+            <p><strong>Longest Runway:</strong> 11,000 ft</p>
+            <p><a href="https://metarcentral.com/airport/PHKO" target="_blank">View Current METAR</a></p>
+            <p><em>Fun Fact:</em> Kona's airport is named after the late astronaut, Ellison Onizuka.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHTO -->
+      <div class="card" style="margin-bottom:3rem;">
+        <div class="grid" style="grid-template-columns: 1.2fr 1fr; align-items:center;">
+          <div class="image-placeholder">Hilo Airport Image</div>
+          <div>
+            <h3>Hilo – PHTO</h3>
+            <p>Rain‑rich eastern Big Island gateway near volcanic terrain.</p>
+            <p><strong>Longest Runway:</strong> 9,800 ft</p>
+            <p><a href="https://metarcentral.com/airport/PHTO" target="_blank">View Current METAR</a></p>
+            <p><em>Fun Fact:</em> The volcano, Mauna Kea, is easily seen from the Hilo airport.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 Wikijet — All Rights Reserved</p>
-    </div>
+  <footer>
+    © 2025 Wiki Jet · A fictional virtual airline
   </footer>
+
 </body>
 </html>
