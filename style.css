@@ -90,6 +90,13 @@ nav a:hover {
   font-weight: 600;
 }
 
+/* Space the primary button inside the hero content */
+.hero .btn-primary {
+  display: inline-block;
+  margin-top: 1.2rem;
+}
+
+
 /* ===== Image Placeholder ===== */
 .image-placeholder {
   background: linear-gradient(135deg, #f3f6fb, #e9eef7);
