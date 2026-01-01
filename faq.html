@@ -14,69 +14,87 @@
 <body>
 
 <header>
-    <h1>Wiki Jet - Hawaii's Virtual Airline</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="fleet.html">Fleet</a>
-      <a href="network.html">Network</a>
-      <a href="faq.html">FAQ</a>
-      <a href="https://fshub.io/airline/WKI/overview" target="_blank" rel="noopener">Join</a> 
-      <a href="https://fshub.io/vaap/6753/dashboard" class="btn-primary">Flight Crew Login</a>
-    </nav>
-  </header>
+  <h1>Wiki Jet - Hawaii's Virtual Airline</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="fleet.html">Fleet</a>
+    <a href="network.html">Network</a>
+    <a href="faq.html">FAQ</a>
+    <a href="https://fshub.io/airline/WKI/overview" target="_blank" rel="noopener">Join</a> 
+    <a href="https://fshub.io/vaap/6753/dashboard" class="btn-primary">Flight Crew Login</a>
+  </nav>
+</header>
 
 <main>
   <section>
     <h2 class="page-title">Frequently Asked Questions</h2>
     <p class="page-intro">
-      Answers to the most common questions about flying with Transpacific Virtual Airlines.
+      Have questions about Wiki Jet? Here are answers to the most common things new pilots ask.
     </p>
 
     <div class="faq-list">
 
-      <details class="faq">
-        <summary>What simulator platforms are supported?</summary><br>
-        <p>
-          We currently support Microsoft Flight Simulator and X-Plane. Pilots can also file manual PIREPS, which means we welcome members on XBOX and Playstation!
-        </p><br>
-      </details>
+      <div class="faq-item">
+        <div class="faq-question">
+          What flight simulators does Wiki Jet support?
+        </div>
+        <div class="faq-answer">
+          Wiki Jet currently supports Microsoft Flight Simulator and X-Plane for flight tracking and virtual airline operations.
+        </div>
+      </div>
 
-      <details class="faq">
-        <summary>Do I need to be an experienced pilot to join?</summary><br>
-        <p>
-          No — pilots of all experience levels are welcome. We're happy to help you get started!
-        </p><br>
-      </details>
+      <div class="faq-item">
+        <div class="faq-question">
+          Do I need to be an experienced virtual pilot to join?
+        </div>
+        <div class="faq-answer">
+          Nope — beginners are welcome! Our goal is to create a relaxed, fun, and beginner-friendly environment where you can learn and enjoy inter-island flying.
+        </div>
+      </div>
 
-      <details class="faq">
-        <summary>Is there a minimum activity requirement?</summary><br>
-        <p>
-          This is a hobby that is meant to be fun. You will not find activity requirements at Wiki Jet.
-        </p><br>
-      </details>
+      <div class="faq-item">
+        <div class="faq-question">
+          Is there a required schedule or minimum number of flights?
+        </div>
+        <div class="faq-answer">
+          There are no mandatory flight activity requirements. Fly when you want, as often as you want — this VA is designed for casual hobbyists.
+        </div>
+      </div>
 
-      <details class="faq">
-        <summary>Which aircraft does Wikijet operate?</summary><br>
-        <p>
-          We currently operate the A320neo, but pilots may fly any aircraft in the A320 family. We have plans to expand our fleet in the future.
-        </p><br>
-      </details>
+      <div class="faq-item">
+        <div class="faq-question">
+          Do flights have to stay within Hawaii?
+        </div>
+        <div class="faq-answer">
+          Our primary network focuses on Hawaiian inter-island operations, but pilots are welcome to explore additional routes for fun as well.
+        </div>
+      </div>
 
-      <details class="faq">
-        <summary>How are flights tracked?</summary><br>
-        <p>
-          Flights are logged using LRM, which records flight data automatically when connected.
-        </p><br>
-      </details>
+      <div class="faq-item">
+        <div class="faq-question">
+          How do I log my flights?
+        </div>
+        <div class="faq-answer">
+          Flights are logged automatically through our VA platform once connected. After landing, your flight will appear in your pilot dashboard.
+        </div>
+      </div>
 
     </div>
 
   </section>
 </main>
-  
+
 <footer>
-  © 2025 Wikijet · A fictional virtual airline
+  © 2025 Wiki Jet · A fictional virtual airline
 </footer>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    q.parentElement.classList.toggle('open');
+  });
+});
+</script>
 
 </body>
 </html>
