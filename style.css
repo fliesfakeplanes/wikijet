@@ -268,22 +268,3 @@ footer {
   height:260px;
   overflow:hidden;
 }
-
-
-.faq-card {
-  background-color: #ff7a00; /* Match button orange */
-  color: #ffffff;            /* Ensure text is readable */
-  border-radius: 12px;
-  padding: 1.25rem;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
-  border: none;
-}
-
-.faq-card h2,
-.faq-card h3 {
-  color: #ffffff;
-}
-
-.faq-card p {
-  color: #fefefe;
-}
