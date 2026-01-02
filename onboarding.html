@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiki Jet | Onboarding Steps</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Accordion Overrides */
+    .accordion {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .accordion-header {
+      background: var(--blue);
+      color: white;
+      padding: 1rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .accordion-header:hover {
+      background: var(--teal);
+    }
+
+    .accordion-header .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .accordion-header.active .arrow {
+      transform: rotate(90deg);
+    }
+
+    .accordion-content {
+      background: var(--surface);
+      padding: 1rem 1.5rem;
+      display: none;
+      font-size: 0.96rem;
+      color: var(--text);
+    }
+
+    .accordion-content p {
+      margin-bottom: 0.8rem;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <h1>WIKI JET</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="fleet.html">Fleet</a>
+      <a href="network.html">Network</a>
+      <a href="faq.html">FAQ</a>
+      <a href="join.html">Join</a>
+      <a href="login.html">Pilot Login</a>
+    </nav>
+  </header>
+
+  <!-- ================= ONBOARDING CONTENT ================= -->
+  <main style="max-width:1100px; margin: 3rem auto; padding: 0 1rem;">
+    <h2 class="page-title">Pilot Onboarding Steps</h2>
+    <p class="page-intro">Follow these steps to get started with Wiki Jet.</p>
+
+    <!-- Step 1 -->
+    <div class="accordion">
+      <div class="accordion-header">
+        <span>1. Create Your Pilot Profile</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-content">
+        <p>Create your profile with your name, preferred callsign, and simulator setup.</p>
+        <p>Make sure your email is valid — it’s how we’ll contact you.</p>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="accordion">
+      <div class="accordion-header">
+        <span>2. Join Our Discord</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-content">
+        <p>Access community announcements, help channels, and fleet resources by joining our Discord server.</p>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="accordion">
+      <div class="accordion-header">
+        <span>3. Complete Required Training</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-content">
+        <p>Review the basic flight operations, SOPs, and ACARS procedures.</p>
+        <p>Mark the training as complete in your pilot profile when you’re ready.</p>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="accordion">
+      <div class="accordion-header">
+        <span>4. Link Your Flight Tracker</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-content">
+        <p>Connect your preferred flight tracker (like VATSIM or IVAO) to your Wiki Jet profile so your flights log automatically.</p>
+      </div>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="accordion">
+      <div class="accordion-header">
+        <span>5. Submit Your First Flight</span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-content">
+        <p>Fly your first official flight and submit it through the system. Congrats — you’re live!</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    © 2025 Wiki Jet · A fictional virtual airline
+  </footer>
+
+  <!-- ====== Accordion JavaScript ====== -->
+  <script>
+    const headers = document.querySelectorAll('.accordion-header');
+
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+
+        // toggle visibility
+        const isOpen = header.classList.contains('active');
+        document.querySelectorAll('.accordion-header').forEach(h => {
+          h.classList.remove('active');
+          h.nextElementSibling.style.display = 'none';
+        });
+
+        if (!isOpen) {
+          header.classList.add('active');
+          content.style.display = 'block';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
